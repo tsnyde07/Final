@@ -1,0 +1,17 @@
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\bin\Debug\ProductDy.exe.config
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\bin\Debug\ProductDy.exe
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\bin\Debug\ProductDy.pdb
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.csprojAssemblyReference.cache
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.Properties.Resources.resources
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.csproj.GenerateResource.cache
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.csproj.CoreCompileInputs.cache
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.exe
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.pdb
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\bin\Debug\ProductDB.mdf
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\bin\Debug\ProductDB_log.ldf
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.ProductDetails.resources
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.Display_Products.resources
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.insert.resources
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.Delete.resources
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.Update.resources
+C:\Users\offcampus\source\repos\ProductDy\ProductDy\obj\Debug\ProductDy.Form1.resources

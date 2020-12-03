@@ -1,0 +1,32 @@
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\bin\Debug\Chat.exe.config
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\bin\Debug\Chat.exe
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\bin\Debug\Chat.pdb
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.csprojAssemblyReference.cache
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.Properties.Resources.resources
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.csproj.GenerateResource.cache
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.exe
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.pdb
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.Messages.resources
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.New_User.resources
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.Received.resources
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.chatSignIn.resources
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\obj\Debug\Chat.Send.resources
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\bin\Debug\user_details.mdf
+D:\there\Documents\School\CIS\CIS 314 Windows Programming\Chat\bin\Debug\user_details_log.ldf
+C:\Users\there\Documents\GitHub\Final\bin\Debug\user_details.mdf
+C:\Users\there\Documents\GitHub\Final\bin\Debug\user_details_log.ldf
+C:\Users\there\Documents\GitHub\Final\bin\Debug\Chat.exe.config
+C:\Users\there\Documents\GitHub\Final\bin\Debug\Chat.exe
+C:\Users\there\Documents\GitHub\Final\bin\Debug\Chat.pdb
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.csprojAssemblyReference.cache
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.chatSignIn.resources
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.Messages.resources
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.New_User.resources
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.Properties.Resources.resources
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.Received.resources
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.Send.resources
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.csproj.GenerateResource.cache
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.exe
+C:\Users\there\Documents\GitHub\Final\obj\Debug\Chat.pdb

@@ -34,7 +34,7 @@ namespace Chat
             SqlCommand cmd = con.CreateCommand(); // Need to execute the query
             try
             {
-                string query = "SELECT * FROM user_details WHERE usernames = " + username;
+                string query = "SELECT * FROM user_details WHERE usernames = '" + username + "'";
                 cmd.CommandText = query;
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -46,7 +46,14 @@ namespace Chat
                     con.Open();
                     Int32 returnFlag = (Int32)cmd.ExecuteNonQuery(); // execute the query, the function returns 0 if the insertion unsuccessful
                     if (returnFlag > 0)
-                        MessageBox.Show("Inserted Successfully");
+                    {
+                        con.Close();
+                        MessageBox.Show("New User Created");
+                        query = "CREATE TABLE [" + username + "] (ID int NOT NULL, sender varchar(50) NOT NULL, timestamp date NOT NULL, contents varchar(MAX) NOT NULL, isRead bit NOT NULL, PRIMARY KEY (ID));";
+                        cmd.CommandText = query;
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                    }
                     else
                         MessageBox.Show("Something went wrong");
                     cmd.Dispose();

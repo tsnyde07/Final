@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 /*
@@ -36,17 +37,53 @@ namespace Chat
 
         private void bt_login_Click(object sender, EventArgs e)
         {
-            //first check if the username and password match a database entry then execute the following
-            this.Hide();
-            Messages messages = new Messages();
-            messages.ShowDialog();
-         }
+            if (login())
+            {
+                //first check if the username and password match a database entry then execute the following
+                this.Hide();
+                Messages messages = new Messages();
+                messages.ShowDialog();
+            }
+        }
+        private bool login()
+        {
+            string username = tb_username.Text;
+            string password = tb_password.Text;
+
+            String constr = DatabaseConnect.connectionString;
+            SqlConnection con = new SqlConnection(constr);
+            SqlCommand cmd = con.CreateCommand();
+            try
+            {
+                string query = "SELECT * FROM user_details WHERE usernames = '" + username + "' AND passwords = '" + password + "'";
+                cmd.CommandText = query;
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows == true)
+                {
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Login");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                cmd.Dispose();
+                con.Close();
+            }
+            tb_username.Text = "";
+            tb_password.Text = "";
+            return false;
+        }
     }
+      
 
     public class DatabaseConnect
     {
-
-        // Connection string: Double click on the database(mdf) file in the solution explorer , then look in the preperties section
         public static String connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\there\\Documents\\GitHub\\Final\\user_details.mdf;Integrated Security=True";
         DatabaseConnect() { }
         // Connection string for database server

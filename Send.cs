@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Chat
 {
@@ -29,6 +30,7 @@ namespace Chat
 
         private void bt_send_Click(object sender, EventArgs e)
         {
+            
             //Should add contents to the database then close
             MessageBox.Show("If implemented, message would be sent!");
             this.Close();

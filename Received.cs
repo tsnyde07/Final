@@ -7,9 +7,11 @@ namespace Chat
     public partial class Received : Form
     {
         String username;
-        public Received(String username)
+        int messageID;
+        public Received(String username, int messageID)
         {
             this.username = username;
+            this.messageID = messageID;
             InitializeComponent();
         }
 

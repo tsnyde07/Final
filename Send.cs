@@ -50,7 +50,6 @@ namespace Chat
 
         private void bt_send_Click(object sender, EventArgs e)
         {
-            
             Boolean checkForMessage = checkForMessageContents();
             if(checkForMessage == true)
             {
@@ -72,8 +71,7 @@ namespace Chat
                         MessageBox.Show("Message Sent");
                     else
                         MessageBox.Show("Message Failed to Send");
-
-
+                    this.Close();
                 }
                 catch (Exception ex)
                 {
@@ -83,8 +81,6 @@ namespace Chat
                 {
                     cmd.Dispose();
                     con.Close();
-
-
                 }
             }
             else
@@ -100,12 +96,10 @@ namespace Chat
 
         private void tb_message_TextChanged(object sender, EventArgs e)
         {
-           
         }
 
         private void usernames_listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

@@ -44,7 +44,7 @@ namespace Chat
             this.lb_messages.Name = "lb_messages";
             this.lb_messages.Size = new System.Drawing.Size(350, 388);
             this.lb_messages.TabIndex = 0;
-            this.lb_messages.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lb_messages.SelectedIndexChanged += new System.EventHandler(this.lb_messages_SelectedIndexChanged);
             // 
             // bt_open
             // 
@@ -61,7 +61,7 @@ namespace Chat
             this.bt_delete.Location = new System.Drawing.Point(400, 105);
             this.bt_delete.Name = "bt_delete";
             this.bt_delete.Size = new System.Drawing.Size(87, 34);
-            this.bt_delete.TabIndex = 2;
+            this.bt_delete.TabIndex = 3;
             this.bt_delete.Text = "Delete";
             this.bt_delete.UseVisualStyleBackColor = true;
             this.bt_delete.Click += new System.EventHandler(this.bt_delete_Click);
@@ -71,7 +71,7 @@ namespace Chat
             this.bt_exit.Location = new System.Drawing.Point(400, 150);
             this.bt_exit.Name = "bt_exit";
             this.bt_exit.Size = new System.Drawing.Size(87, 34);
-            this.bt_exit.TabIndex = 3;
+            this.bt_exit.TabIndex = 4;
             this.bt_exit.Text = "Exit";
             this.bt_exit.UseVisualStyleBackColor = true;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
@@ -81,7 +81,7 @@ namespace Chat
             this.bt_compose.Location = new System.Drawing.Point(400, 60);
             this.bt_compose.Name = "bt_compose";
             this.bt_compose.Size = new System.Drawing.Size(87, 34);
-            this.bt_compose.TabIndex = 4;
+            this.bt_compose.TabIndex = 2;
             this.bt_compose.Text = "Compose";
             this.bt_compose.UseVisualStyleBackColor = true;
             this.bt_compose.Click += new System.EventHandler(this.bt_compose_Click);

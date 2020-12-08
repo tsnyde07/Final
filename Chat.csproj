@@ -93,6 +93,11 @@
     <Compile Include="Send.Designer.cs">
       <DependentUpon>Send.cs</DependentUpon>
     </Compile>
+    <Compile Include="user_detailsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>user_detailsDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="chatApp.resx">
       <DependentUpon>chatApp.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +131,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="user_detailsDataSet.xsc">
+      <DependentUpon>user_detailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="user_detailsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>user_detailsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="user_detailsDataSet.xss">
+      <DependentUpon>user_detailsDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

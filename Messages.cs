@@ -9,34 +9,32 @@ namespace Chat
 {
     public partial class Messages : Form
     {
+        int messageID;
         String username;
         public Messages(String username)
         {
             this.username = username;
             InitializeComponent();
         }
-
         private void lb_messages_SelectedIndexChanged(object sender, EventArgs e)
         {
+            getMessageID();
         }
-
         private void Messages_Load(object sender, EventArgs e)
         {
             String constr = DatabaseConnect.connectionString;
             SqlConnection con = new SqlConnection(constr);
-            String sel = "select timestamp from " + username;
+            String sel = "select timestamp from " + username + " WHERE isRead = 0";
             SqlDataAdapter Da = new SqlDataAdapter(sel, con);
             DataSet ds = new DataSet();
             Da.Fill(ds, "QueryResult_user_details");
             lb_messages.DataSource = ds.Tables["QueryResult_user_details"];
             lb_messages.DisplayMember = "timestamp";
         }
-
         private void bt_exit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }
-
         private void bt_delete_Click(object sender, EventArgs e)
         {
             String constr = DatabaseConnect.connectionString;  // See DatabaseConnect Class in Form1.cs file- bottom
@@ -44,7 +42,8 @@ namespace Chat
             SqlCommand cmd = con.CreateCommand();
             try
             {
-                String query = "UPDATE " + username + " SET contents = '[REDACTED]', isRead = 1";
+                String query = "UPDATE " + username + " SET contents = '[REDACTED]', isRead = 1 WHERE messageID=@messageID";
+                cmd.Parameters.AddWithValue("@messageID", messageID);
                 cmd.CommandText = query;
                 con.Open(); // open the Database connection for insertion when done must close the connection to avoid issues
                 Int32 returnFlag = (Int32)cmd.ExecuteNonQuery(); // execute the query, the function returns 0 if the insertion unsuccessful
@@ -63,14 +62,12 @@ namespace Chat
                 con.Close();
             }
         }
-
-        private void bt_open_Click(object sender, EventArgs e)
+        private void getMessageID()
         {
             String constr = DatabaseConnect.connectionString;
             SqlConnection con = new SqlConnection(constr);
             SqlCommand cmd = con.CreateCommand();
-            
-            int messageID = 1;
+
             String timestamp = lb_messages.GetItemText(lb_messages.SelectedItem);
             String sel = "SELECT messageID FROM " + username + " WHERE timestamp=@timestamp";
             cmd.CommandText = sel;
@@ -82,12 +79,14 @@ namespace Chat
                 rd.Read();
                 messageID = rd.GetInt32(0);
             }
+        }
+        private void bt_open_Click(object sender, EventArgs e)
+        {
             this.Hide();
             Received received = new Received(username, messageID);
             received.ShowDialog();
             this.Show();
         }
-
         private void bt_compose_Click(object sender, EventArgs e)
         {
             this.Hide();

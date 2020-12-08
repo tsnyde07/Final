@@ -49,7 +49,7 @@ namespace Chat
                     {
                         con.Close();
                         MessageBox.Show("New User Created");
-                        query = "CREATE TABLE [" + username + "] (messageID int NOT NULL, sender varchar(50) NOT NULL, timestamp varchar(20) NOT NULL, contents varchar(MAX) NOT NULL, isRead bit NOT NULL, PRIMARY KEY CLUSTERED([messageID] ASC));";
+                        query = "CREATE TABLE [" + username + "] (messageID int IDENTITY (1,1) NOT NULL, sender varchar(50) NOT NULL, timestamp varchar(20) NOT NULL, contents varchar(MAX) NOT NULL, isRead bit NOT NULL, PRIMARY KEY CLUSTERED([messageID] ASC));";
                         cmd.CommandText = query;
                         con.Open();
                         cmd.ExecuteNonQuery();

@@ -38,10 +38,10 @@ namespace Chat
             // 
             // bt_close
             // 
-            this.bt_close.Location = new System.Drawing.Point(149, 424);
-            this.bt_close.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_close.Location = new System.Drawing.Point(199, 522);
+            this.bt_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_close.Name = "bt_close";
-            this.bt_close.Size = new System.Drawing.Size(56, 50);
+            this.bt_close.Size = new System.Drawing.Size(75, 62);
             this.bt_close.TabIndex = 11;
             this.bt_close.Text = "Close";
             this.bt_close.UseVisualStyleBackColor = true;
@@ -49,10 +49,10 @@ namespace Chat
             // 
             // bt_send
             // 
-            this.bt_send.Location = new System.Drawing.Point(89, 424);
-            this.bt_send.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_send.Location = new System.Drawing.Point(119, 522);
+            this.bt_send.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_send.Name = "bt_send";
-            this.bt_send.Size = new System.Drawing.Size(56, 50);
+            this.bt_send.Size = new System.Drawing.Size(75, 62);
             this.bt_send.TabIndex = 9;
             this.bt_send.Text = "Send";
             this.bt_send.UseVisualStyleBackColor = true;
@@ -61,43 +61,45 @@ namespace Chat
             // tb_message
             // 
             this.tb_message.BackColor = System.Drawing.Color.White;
-            this.tb_message.Location = new System.Drawing.Point(23, 173);
-            this.tb_message.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_message.Location = new System.Drawing.Point(31, 213);
+            this.tb_message.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_message.Multiline = true;
             this.tb_message.Name = "tb_message";
-            this.tb_message.Size = new System.Drawing.Size(257, 247);
+            this.tb_message.Size = new System.Drawing.Size(341, 303);
             this.tb_message.TabIndex = 8;
             this.tb_message.TextChanged += new System.EventHandler(this.tb_message_TextChanged);
             // 
             // lb_to
             // 
             this.lb_to.AutoSize = true;
-            this.lb_to.Location = new System.Drawing.Point(46, 33);
-            this.lb_to.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_to.Location = new System.Drawing.Point(61, 41);
             this.lb_to.Name = "lb_to";
-            this.lb_to.Size = new System.Drawing.Size(23, 13);
+            this.lb_to.Size = new System.Drawing.Size(29, 17);
             this.lb_to.TabIndex = 7;
             this.lb_to.Text = "To:";
             // 
             // usernames_listbox
             // 
             this.usernames_listbox.FormattingEnabled = true;
-            this.usernames_listbox.Location = new System.Drawing.Point(89, 50);
+            this.usernames_listbox.ItemHeight = 16;
+            this.usernames_listbox.Location = new System.Drawing.Point(119, 62);
+            this.usernames_listbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernames_listbox.Name = "usernames_listbox";
-            this.usernames_listbox.Size = new System.Drawing.Size(120, 95);
+            this.usernames_listbox.Size = new System.Drawing.Size(159, 116);
             this.usernames_listbox.TabIndex = 12;
+            this.usernames_listbox.SelectedIndexChanged += new System.EventHandler(this.usernames_listbox_SelectedIndexChanged);
             // 
             // Send
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 523);
+            this.ClientSize = new System.Drawing.Size(407, 644);
             this.Controls.Add(this.usernames_listbox);
             this.Controls.Add(this.bt_close);
             this.Controls.Add(this.bt_send);
             this.Controls.Add(this.tb_message);
             this.Controls.Add(this.lb_to);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Send";
             this.Text = "Send";
             this.Load += new System.EventHandler(this.Send_Load);

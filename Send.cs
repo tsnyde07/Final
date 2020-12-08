@@ -13,8 +13,10 @@ namespace Chat
 {
     public partial class Send : Form
     {
-        public Send()
+        String username;
+        public Send(String username)
         {
+            this.username = username;
             InitializeComponent();
         }
 
@@ -53,14 +55,16 @@ namespace Chat
             if(checkForMessage == true)
             {
                 string message = tb_message.Text;
-                string recipient = usernames_listbox.SelectedItem.ToString();
+                string recipient = usernames_listbox.GetItemText(usernames_listbox.SelectedItem);
+                DateTime myDateTime = DateTime.Now;
+                string date = myDateTime.ToString("yyyy-MM-dd HH:mm:ss");
                 String constr = DatabaseConnect.connectionString;  // See DatabaseConnect Class in Form1.cs file- bottom
                 SqlConnection con = new SqlConnection(constr);  // create the database connecting
                 SqlCommand cmd = con.CreateCommand(); // Need to execute the query
                 try
                 {
-                    //form the SQL insert query using the given data
-                    string query = "insert into user_message_details values('" + recipient + "','" + message + ")";
+                    int isRead = 0;
+                    string query = "insert into " + recipient + " values('" + username + "','" + date + "','" + message + "','" + isRead + "')";
                     cmd.CommandText = query;
                     con.Open(); // open the Database connection for insertion when done must close the connection to avoid issues
                     Int32 returnFlag = (Int32)cmd.ExecuteNonQuery(); // execute the query, the function returns 0 if the insertion unsuccessful
@@ -97,6 +101,11 @@ namespace Chat
         private void tb_message_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void usernames_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

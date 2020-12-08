@@ -41,7 +41,7 @@ namespace Chat
             {
                 //first check if the username and password match a database entry then execute the following
                 this.Hide();
-                Messages messages = new Messages();
+                Messages messages = new Messages(tb_username.Text);
                 messages.ShowDialog();
             }
         }
@@ -84,7 +84,7 @@ namespace Chat
 
     public class DatabaseConnect
     {
-        public static String connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Dylan\\Documents\\GitHub\\Final\\user_details.mdf;Integrated Security=True";
+        public static String connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\there\\Documents\\GitHub\\Final\\user_details.mdf;Integrated Security=True";
         DatabaseConnect() { }
         // Connection string for database server
         //String constr = "Server=SBF2D1Z2;Database=PRODUCTDB;Integrated Security=True;";

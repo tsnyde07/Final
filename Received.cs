@@ -6,12 +6,14 @@ namespace Chat
 {
     public partial class Received : Form
     {
-        public Received()
+        String username;
+        public Received(String username)
         {
+            this.username = username;
             InitializeComponent();
         }
 
-        private void Recveived_Load(object sender, EventArgs e)
+/*        private void Recveived_Load(object sender, EventArgs e)
         {
             String constr = DatabaseConnect.connectionString;
             SqlConnection con = new SqlConnection(constr);
@@ -28,7 +30,7 @@ namespace Chat
             con.Close();
             
         }
-
+*/
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -52,7 +54,7 @@ namespace Chat
 
             //Should pass the sender of the selected message in received
             this.Hide();
-            Send send = new Send();
+            Send send = new Send(username);
             send.ShowDialog();
             this.Show();
         }
@@ -80,17 +82,17 @@ namespace Chat
             SqlConnection con = new SqlConnection(constr);
             SqlCommand cmd = con.CreateCommand();
             try
-            {   // Pulls the username from the database and shows it in the From textbox
-                String query = = "Pull from user_details values('" username "'")"; 
-       
+            {   
+                // Pulls the username from the database and shows it in the From textbox
+                // String query = = "Pull from user_details values('" username "'")"; 
 
-        }
+
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
             }
 
         }
-    }
     }
 }

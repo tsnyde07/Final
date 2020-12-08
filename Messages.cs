@@ -7,8 +7,10 @@ namespace Chat
 {
     public partial class Messages : Form
     {
-        public Messages()
+        String username;
+        public Messages(String username)
         {
+            this.username = username;
             InitializeComponent();
         }
 
@@ -38,7 +40,7 @@ namespace Chat
             //Should launch the received form and display this message's records
             //Best way would be to pass the selected item from the list box?
             this.Hide();
-            Received received = new Received();
+            Received received = new Received(username);
             received.ShowDialog();
             this.Show();
         }
@@ -46,7 +48,7 @@ namespace Chat
         private void bt_compose_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Send send = new Send();
+            Send send = new Send(username);
             send.ShowDialog();
             this.Show();
         }

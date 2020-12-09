@@ -14,6 +14,7 @@ namespace Chat
     public partial class Send : Form
     {
         String username;
+
         public Send(String username)
         {
             this.username = username;
@@ -30,9 +31,8 @@ namespace Chat
             DataSet ds = new DataSet();
 
             Da.Fill(ds, "QueryResult_user_details");
-            usernames_listbox.DataSource = ds.Tables["QueryResult_user_details"];
-            usernames_listbox.DisplayMember = "usernames";
-
+            usernames_combobox.DataSource = ds.Tables["QueryResult_user_details"];
+            usernames_combobox.DisplayMember = "usernames";          
             con.Close();
         }
 
@@ -50,11 +50,12 @@ namespace Chat
 
         private void bt_send_Click(object sender, EventArgs e)
         {
+
             Boolean checkForMessage = checkForMessageContents();
             if(checkForMessage == true)
             {
                 string message = tb_message.Text;
-                string recipient = usernames_listbox.GetItemText(usernames_listbox.SelectedItem);
+                string recipient = usernames_combobox.GetItemText(usernames_combobox.SelectedItem);
                 DateTime myDateTime = DateTime.Now;
                 string date = myDateTime.ToString("yyyy-MM-dd HH:mm:ss");
                 String constr = DatabaseConnect.connectionString;  // See DatabaseConnect Class in Form1.cs file- bottom
@@ -72,6 +73,7 @@ namespace Chat
                     else
                         MessageBox.Show("Message Failed to Send");
                     this.Close();
+
                 }
                 catch (Exception ex)
                 {
@@ -87,6 +89,7 @@ namespace Chat
             {
                 MessageBox.Show("Please enter a message before sending");
             }
+
         }
 
         private void bt_close_Click(object sender, EventArgs e)
@@ -98,8 +101,5 @@ namespace Chat
         {
         }
 
-        private void usernames_listbox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
     }
 }

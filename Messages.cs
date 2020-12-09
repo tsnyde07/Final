@@ -16,24 +16,27 @@ namespace Chat
             this.username = username;
             InitializeComponent();
         }
+
         private void lb_messages_SelectedIndexChanged(object sender, EventArgs e)
         {
             getMessageID();
         }
-        private void Messages_Load(object sender, EventArgs e)
+        public void Messages_Load(object sender, EventArgs e)
         {
             String constr = DatabaseConnect.connectionString;
             SqlConnection con = new SqlConnection(constr);
-            String sel = "select timestamp from " + username + " WHERE isRead = 0";
+            String sel = "select sender,timestamp from " + username + " WHERE isRead = 0";
             SqlDataAdapter Da = new SqlDataAdapter(sel, con);
             DataSet ds = new DataSet();
             Da.Fill(ds, "QueryResult_user_details");
             lb_messages.DataSource = ds.Tables["QueryResult_user_details"];
             lb_messages.DisplayMember = "timestamp";
+
         }
+
         private void bt_exit_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
         private void bt_delete_Click(object sender, EventArgs e)
         {
@@ -60,6 +63,7 @@ namespace Chat
             {
                 cmd.Dispose();
                 con.Close();
+                Messages_Load(null, EventArgs.Empty);
             }
         }
         private void getMessageID()
@@ -86,6 +90,7 @@ namespace Chat
             Received received = new Received(username, messageID);
             received.ShowDialog();
             this.Show();
+   
         }
         private void bt_compose_Click(object sender, EventArgs e)
         {
@@ -93,6 +98,19 @@ namespace Chat
             Send send = new Send(username);
             send.ShowDialog();
             this.Show();
+        }
+
+        private void logout_bt_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            chatSignIn chat = new chatSignIn();
+            chat.ShowDialog();
+            this.Show();
+        }
+
+        private void refresh_bt_Click(object sender, EventArgs e)
+        {
+            Messages_Load(null, EventArgs.Empty);
         }
     }
 }

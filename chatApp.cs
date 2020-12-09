@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
+
 /*
  * This will be the initial form
  * After users exist in the database, you can sign in
@@ -20,7 +21,7 @@ namespace Chat
 
         private void bt_exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            System.Windows.Forms.Application.ExitThread();
         }
 
         private void bt_newUser_Click(object sender, EventArgs e)
@@ -84,7 +85,16 @@ namespace Chat
 
     public class DatabaseConnect
     {
-        public static String connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\there\\Documents\\GitHub\\Final\\user_details.mdf;Integrated Security=True";
+        // public static String connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\there\\Documents\\GitHub\\Final\\user_details.mdf;Integrated Security=True";
+
+        public static String connectionString = "Data Source = (LocalDB)\\MSSQLLocalDB;AttachDbFilename=" +
+        System.IO.Directory.GetCurrentDirectory() + "\\user_details.mdf;" +
+        "Integrated Security=True;Connect Timeout=30;User Instance=False";
+
+    //    public static String connectionString = "Data Source = (LocalDB)\\MSSQLLocalDB;AttachDbFilename=" +
+     // "C:\\Users\\tensile\\source\\repos\\Final-main" + "\\user_details.mdf;" +
+     //  "Integrated Security=True;Connect Timeout=30;User Instance=False";
+
         DatabaseConnect() { }
         // Connection string for database server
         //String constr = "Server=SBF2D1Z2;Database=PRODUCTDB;Integrated Security=True;";

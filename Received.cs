@@ -38,8 +38,10 @@ namespace Chat
                 rd.Read();
                 from = rd.GetString(0);
                 tb_from.Text = from;
+                from_label.Text = from;
             }
         }
+
         private void loadMessage()
         {
             String message;
@@ -62,6 +64,7 @@ namespace Chat
         {
             this.Close();
         }
+
         public Boolean CheckForMessageContents()
         {
             if (tb_message.Text.Length > 0)
@@ -77,10 +80,14 @@ namespace Chat
         private void bt_reply_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //string replyToSender = from_label.Text;
             Send send = new Send(username);
             send.ShowDialog();
+            //Reply reply = new Reply(username, replyToSender);
+            //reply.ShowDialog();
             this.Show();
         }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
         }

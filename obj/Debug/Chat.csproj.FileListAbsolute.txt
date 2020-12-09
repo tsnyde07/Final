@@ -46,3 +46,67 @@ C:\Users\Dylan\Documents\GitHub\Final\obj\Debug\Chat.csproj.GenerateResource.cac
 C:\Users\Dylan\Documents\GitHub\Final\obj\Debug\Chat.csproj.CoreCompileInputs.cache
 C:\Users\Dylan\Documents\GitHub\Final\obj\Debug\Chat.exe
 C:\Users\Dylan\Documents\GitHub\Final\obj\Debug\Chat.pdb
+\\ftfp1\home\tensile\Desktop\Final-main\bin\Debug\user_details.mdf
+\\ftfp1\home\tensile\Desktop\Final-main\bin\Debug\user_details_log.ldf
+\\ftfp1\home\tensile\Desktop\Final-main\bin\Debug\Chat.exe.config
+\\ftfp1\home\tensile\Desktop\Final-main\bin\Debug\Chat.exe
+\\ftfp1\home\tensile\Desktop\Final-main\bin\Debug\Chat.pdb
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.csprojAssemblyReference.cache
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.chatSignIn.resources
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.Messages.resources
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.New_User.resources
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.Properties.Resources.resources
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.Received.resources
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.Send.resources
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.csproj.GenerateResource.cache
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.exe
+\\ftfp1\home\tensile\Desktop\Final-main\obj\Debug\Chat.pdb
+\\ftfp1\home\tensile\Downloads\Final-main\bin\Debug\user_details.mdf
+\\ftfp1\home\tensile\Downloads\Final-main\bin\Debug\user_details_log.ldf
+\\ftfp1\home\tensile\Downloads\Final-main\bin\Debug\Chat.exe.config
+\\ftfp1\home\tensile\Downloads\Final-main\bin\Debug\Chat.exe
+\\ftfp1\home\tensile\Downloads\Final-main\bin\Debug\Chat.pdb
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.csprojAssemblyReference.cache
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.chatSignIn.resources
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.Messages.resources
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.New_User.resources
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.Properties.Resources.resources
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.Received.resources
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.Send.resources
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.csproj.GenerateResource.cache
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.exe
+\\ftfp1\home\tensile\Downloads\Final-main\obj\Debug\Chat.pdb
+C:\Users\tensile\source\repos\Final-main\bin\Debug\user_details.mdf
+C:\Users\tensile\source\repos\Final-main\bin\Debug\user_details_log.ldf
+C:\Users\tensile\source\repos\Final-main\bin\Debug\Chat.exe.config
+C:\Users\tensile\source\repos\Final-main\bin\Debug\Chat.exe
+C:\Users\tensile\source\repos\Final-main\bin\Debug\Chat.pdb
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.csprojAssemblyReference.cache
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.chatSignIn.resources
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.Messages.resources
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.New_User.resources
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.Properties.Resources.resources
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.Received.resources
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.Send.resources
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.csproj.GenerateResource.cache
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.exe
+C:\Users\tensile\source\repos\Final-main\obj\Debug\Chat.pdb
+C:\Users\there\Documents\most recent changes\Final-main\bin\Debug\user_details.mdf
+C:\Users\there\Documents\most recent changes\Final-main\bin\Debug\user_details_log.ldf
+C:\Users\there\Documents\most recent changes\Final-main\bin\Debug\Chat.exe.config
+C:\Users\there\Documents\most recent changes\Final-main\bin\Debug\Chat.exe
+C:\Users\there\Documents\most recent changes\Final-main\bin\Debug\Chat.pdb
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.csprojAssemblyReference.cache
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.chatSignIn.resources
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.Messages.resources
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.New_User.resources
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.Properties.Resources.resources
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.Received.resources
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.Send.resources
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.csproj.GenerateResource.cache
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.exe
+C:\Users\there\Documents\most recent changes\Final-main\obj\Debug\Chat.pdb
